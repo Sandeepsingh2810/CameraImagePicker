@@ -13,6 +13,7 @@
 		5575E05C2373516C00F79500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5575E05A2373516C00F79500 /* Main.storyboard */; };
 		5575E05E2373516E00F79500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5575E05D2373516E00F79500 /* Assets.xcassets */; };
 		5575E0612373516E00F79500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5575E05F2373516E00F79500 /* LaunchScreen.storyboard */; };
+		5575E0692373686200F79500 /* BaseImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5575E0682373686200F79500 /* BaseImagePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5575E05D2373516E00F79500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5575E0602373516E00F79500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5575E0622373516E00F79500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5575E0682373686200F79500 /* BaseImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseImagePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				5575E05D2373516E00F79500 /* Assets.xcassets */,
 				5575E05F2373516E00F79500 /* LaunchScreen.storyboard */,
 				5575E0622373516E00F79500 /* Info.plist */,
+				5575E0682373686200F79500 /* BaseImagePickerViewController.swift */,
 			);
 			path = CameraImagePicker;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5575E0592373516C00F79500 /* ViewController.swift in Sources */,
+				5575E0692373686200F79500 /* BaseImagePickerViewController.swift in Sources */,
 				5575E0552373516C00F79500 /* AppDelegate.swift in Sources */,
 				5575E0572373516C00F79500 /* SceneDelegate.swift in Sources */,
 			);

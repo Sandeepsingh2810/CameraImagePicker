@@ -8,13 +8,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: BaseImagePickerViewController{
 
+    @IBOutlet weak var displayImage: UIImageView!
+    
+    @IBAction func chooseImageBtn(_ sender: UIButton)
+    {
+        openOtions()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    override func selectedImage(chooseImage: UIImage) {
+        displayImage.image=chooseImage
+    }
 
 }
 
