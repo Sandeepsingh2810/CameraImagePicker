@@ -14,7 +14,7 @@ class ViewController: BaseImagePickerViewController{
     
     @IBAction func chooseImageBtn(_ sender: UIButton)
     {
-        openOtions()
+        openOptions()
     }
     
     override func viewDidLoad() {
