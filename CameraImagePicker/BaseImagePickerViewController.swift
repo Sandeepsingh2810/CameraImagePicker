@@ -13,14 +13,14 @@ import AVFoundation
 class BaseImagePickerViewController: UIViewController , UIImagePickerControllerDelegate,UINavigationControllerDelegate{
 
     let imagePicker = UIImagePickerController()
-    var imgPass = UIImage()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate=self
         imagePicker.allowsEditing=true
         imagePicker.mediaTypes=["public.image"]
-        
+        print(UIImagePickerController.availableMediaTypes(for: .photoLibrary)!)
     }
     
     func openOptions() {
@@ -68,6 +68,7 @@ class BaseImagePickerViewController: UIViewController , UIImagePickerControllerD
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+       
         
         dismiss(animated: true, completion: nil)
         if imagePicker.mediaTypes == ["public.image"]{
