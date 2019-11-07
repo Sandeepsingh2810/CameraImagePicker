@@ -35,7 +35,6 @@ class BaseImagePickerViewController: UIViewController , UIImagePickerControllerD
         let cameraAction = UIAlertAction(title: "Camera", style: .default, handler: {btn in
             
             self.imagePicker.sourceType = .camera
-            //self.imagePicker.mediaTypes = ["public.image","public.movie"]
             self.openPicker()
             })
             alert.addAction(cameraAction)
@@ -75,10 +74,11 @@ class BaseImagePickerViewController: UIViewController , UIImagePickerControllerD
         
         dismiss(animated: true, completion: nil)
         if imagePicker.mediaTypes == ["public.image"]{
-        let chooseImage = info[UIImagePickerController.InfoKey.editedImage] as! UIImage
+            let chooseImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         
         selectedImage(chooseImage: chooseImage)
-        dismiss(animated: true, completion: nil)
+        imagePickerControllerDidCancel(imagePicker)
+           
         
         }
         
