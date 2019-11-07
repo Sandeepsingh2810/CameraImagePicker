@@ -35,18 +35,21 @@ class BaseImagePickerViewController: UIViewController , UIImagePickerControllerD
         let cameraAction = UIAlertAction(title: "Camera", style: .default, handler: {btn in
             
             self.imagePicker.sourceType = .camera
+            //self.imagePicker.mediaTypes = ["public.image","public.movie"]
             self.openPicker()
             })
             alert.addAction(cameraAction)
         }
         
         let gallaryAction = UIAlertAction(title: "Gallary", style: .default, handler: {btn in
+            self.imagePicker.mediaTypes = ["public.image"]
             self.imagePicker.sourceType = .photoLibrary
             self.openPicker()
         })
         let cameraRollAction = UIAlertAction(title: "Camera Rolls", style: .default, handler: {btn in
-        self.imagePicker.sourceType = .savedPhotosAlbum
-        self.openPicker()
+            self.imagePicker.mediaTypes = ["public.image"]
+            self.imagePicker.sourceType = .savedPhotosAlbum
+            self.openPicker()
         })
         let videoAction = UIAlertAction(title: "Pick Video", style: .default, handler: {btn in
             self.imagePicker.sourceType = .photoLibrary
